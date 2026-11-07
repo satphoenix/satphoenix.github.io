@@ -246,6 +246,170 @@ body {
   transform: translateY(-2px);
 }
 
+/* Donate / Sponsor Buttons */
+.btn-donate {
+  background: rgba(235, 54, 120, 0.12);
+  color: #ff75a0;
+  border: 1px solid rgba(235, 54, 120, 0.35);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  padding: 0.65rem 1.25rem;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+}
+
+.btn-donate:hover {
+  background: linear-gradient(135deg, #eb3678 0%, #fa5560 100%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 6px 20px rgba(235, 54, 120, 0.45);
+  transform: translateY(-2px);
+}
+
+.btn-donate:hover i {
+  color: #ffffff !important;
+  transform: scale(1.15);
+}
+
+.btn-donate i {
+  transition: transform 0.2s ease;
+}
+
+.btn-donate-lg {
+  background: linear-gradient(135deg, #d62860 0%, #eb3678 50%, #f77062 100%);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.85rem;
+  font-size: 1.05rem;
+  box-shadow: 0 6px 25px rgba(235, 54, 120, 0.4);
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+.btn-donate-lg:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(235, 54, 120, 0.6);
+}
+
+.sponsor-banner-card {
+  background: linear-gradient(145deg, rgba(235, 54, 120, 0.07) 0%, rgba(26, 34, 52, 0.85) 50%, rgba(255, 69, 0, 0.07) 100%);
+  border: 1px solid rgba(235, 54, 120, 0.3);
+  border-radius: var(--radius-xl);
+  padding: 3.5rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.sponsor-banner-card::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -30%;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(235, 54, 120, 0.15) 0%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+/* Donation Channels & UPI Card */
+.donation-channel-card {
+  background: rgba(14, 19, 31, 0.85);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 1.75rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.donation-channel-card:hover {
+  border-color: rgba(235, 54, 120, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(235, 54, 120, 0.12);
+}
+
+.donation-channel-card.upi-variant:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(16, 185, 129, 0.15);
+}
+
+.upi-id-box {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px dashed rgba(16, 185, 129, 0.4);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  color: #34d399;
+  letter-spacing: 0.5px;
+}
+
+.upi-id-text {
+  font-weight: 700;
+  user-select: all;
+  word-break: break-all;
+}
+
+.btn-upi {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1.5rem;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(16, 185, 129, 0.35);
+}
+
+.btn-upi:hover {
+  background: linear-gradient(135deg, #047857 0%, #059669 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
+}
+
+.upi-qr-image-wrapper {
+  background: #ffffff;
+  padding: 0.65rem;
+  border-radius: var(--radius-md);
+  display: inline-block;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(16, 185, 129, 0.5);
+}
+
+.upi-qr-image-wrapper img {
+  width: 170px;
+  height: 170px;
+  display: block;
+}
+
 .btn-gdrive {
   background: linear-gradient(135deg, #1b3a2a 0%, #155724 100%);
   border: 1px solid rgba(40, 167, 69, 0.4);
