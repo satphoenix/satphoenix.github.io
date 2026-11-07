@@ -234,6 +234,22 @@ $(document).ready(function () {
     showToast(`Google Drive link for <strong>${appName}</strong> copied!`, "bi-clipboard-check-fill", "text-warning");
   }
 
+  // Copy UPI ID Action
+  $(document).on("click", ".btn-copy-upi", function (e) {
+    e.preventDefault();
+    const upiId = $(this).attr("data-upi") || "8903860041@apl";
+
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(upiId).then(function () {
+        showToast(`UPI ID <strong>${upiId}</strong> copied to clipboard!`, "bi-check-circle-fill", "text-success");
+      }).catch(function () {
+        fallbackCopyText(upiId, "UPI ID");
+      });
+    } else {
+      fallbackCopyText(upiId, "UPI ID");
+    }
+  });
+
   // 4. Details Modal Population
   $(document).on("click", ".btn-view-details", function () {
     const appId = $(this).data("app-id");
@@ -302,6 +318,7 @@ $(document).ready(function () {
   • <span class="text-warning">info &lt;name&gt;</span> - Show detailed information on an app
   • <span class="text-warning">download &lt;name&gt;</span> - Open Google Drive download folder
   • <span class="text-warning">os</span> - View Phoenix OS specs
+  • <span class="text-warning">donate</span> / <span class="text-warning">upi</span> - Sponsor via UPI (8903860041@apl) or GitHub
   • <span class="text-warning">about</span> - About the Phoenix Ecosystem
   • <span class="text-warning">clear</span> - Clear terminal output`, "output");
         break;
@@ -355,6 +372,16 @@ $(document).ready(function () {
   • Target: x86_64, ARM64 architecture
   • Security: Zero telemetry, sandboxed user namespaces
   • Link: https://drive.google.com/drive/folders/1waesyn9nZS0AyFMPHzUCFb3qRBaso_v_?usp=sharing`, "output");
+        break;
+
+      case "donate":
+      case "sponsor":
+      case "upi":
+        appendTerminalLine(`❤️ Thank you for supporting the Phoenix project!
+  • Direct UPI ID: <strong class="text-success">8903860041@apl</strong> (GPay, PhonePe, Paytm, BHIM)
+  • GitHub Sponsors: <span class="text-warning">https://github.com/sponsors/satheshsat</span>
+  Opening donation channels...`, "success");
+        window.open("https://github.com/sponsors/satheshsat", "_blank");
         break;
 
       case "about":
