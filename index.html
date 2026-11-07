@@ -78,9 +78,15 @@
           <li class="nav-item">
             <a class="nav-link nav-link-custom" href="#faq"><i class="bi bi-question-circle me-1"></i> FAQ</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#donate"><i class="bi bi-heart me-1 text-danger"></i> Donate</a>
+          </li>
         </ul>
 
-        <div class="d-flex align-items-center gap-3">
+        <div class="d-flex align-items-center gap-2">
+          <a href="https://github.com/sponsors/satheshsat" target="_blank" rel="noopener noreferrer" class="btn btn-donate btn-sm" title="Sponsor Phoenix on GitHub">
+            <i class="bi bi-heart-fill text-danger"></i> Donate
+          </a>
           <a href="#downloads" class="btn btn-phoenix-primary btn-sm">
             <i class="bi bi-download"></i> Get Phoenix Suite
           </a>
@@ -113,6 +119,9 @@
             </a>
             <a href="#terminal" class="btn btn-phoenix-outline btn-lg">
               <i class="bi bi-terminal-fill"></i> Try Phoenix Shell
+            </a>
+            <a href="https://github.com/sponsors/satheshsat" target="_blank" rel="noopener noreferrer" class="btn btn-donate btn-lg">
+              <i class="bi bi-heart-fill text-danger"></i> Donate
             </a>
           </div>
 
@@ -646,6 +655,127 @@
     </div>
   </section>
 
+  <!-- Support & Donate Section -->
+  <section class="py-5" id="donate">
+    <div class="container" style="max-width: 1020px;">
+      <div class="sponsor-banner-card">
+        <div class="text-center mb-5">
+          <div class="d-inline-flex align-items-center justify-content-center p-3 rounded-circle bg-dark border border-danger border-opacity-25 mb-3 shadow-sm" style="width: 72px; height: 72px;">
+            <i class="bi bi-heart-fill text-danger fs-1"></i>
+          </div>
+          
+          <div>
+            <span class="badge-phoenix mb-2"><i class="bi bi-gift-fill"></i> Community Supported</span>
+            <h2 class="display-6 fw-bold text-white mb-2">Support The <span class="text-gradient">Phoenix</span> Project</h2>
+            <p class="text-secondary-custom mx-auto mb-0" style="max-width: 660px;">
+              All Phoenix tools and operating systems are 100% free and open. Your contributions directly fund bandwidth, build runners, and continuous tool development.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Option 1: GitHub Sponsors -->
+          <div class="col-lg-6">
+            <div class="donation-channel-card">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="app-icon-box" style="background: rgba(235, 54, 120, 0.15); color: #ff75a0; border-color: rgba(235, 54, 120, 0.3);">
+                    <i class="bi bi-github fs-3"></i>
+                  </div>
+                  <div>
+                    <h5 class="text-white fw-bold mb-0">GitHub Sponsors</h5>
+                    <span class="text-muted small">Global / International</span>
+                  </div>
+                </div>
+                <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25">Recommended</span>
+              </div>
+
+              <p class="text-secondary-custom small mb-3 flex-grow-1">
+                Support via international credit/debit cards, PayPal, Apple Pay, and Google Pay through GitHub's official sponsorship platform with monthly or custom one-time tiers.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="badge bg-dark border border-secondary text-secondary-custom">Credit Cards</span>
+                <span class="badge bg-dark border border-secondary text-secondary-custom">PayPal</span>
+                <span class="badge bg-dark border border-secondary text-secondary-custom">Apple Pay</span>
+                <span class="badge bg-dark border border-secondary text-secondary-custom">Monthly / One-time</span>
+              </div>
+
+              <a href="https://github.com/sponsors/satheshsat" target="_blank" rel="noopener noreferrer" class="btn btn-donate-lg w-100">
+                <i class="bi bi-github"></i> Sponsor @satheshsat on GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Option 2: Direct UPI Donation -->
+          <div class="col-lg-6">
+            <div class="donation-channel-card upi-variant">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="app-icon-box" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.3);">
+                    <i class="bi bi-qr-code-scan fs-3"></i>
+                  </div>
+                  <div>
+                    <h5 class="text-white fw-bold mb-0">Instant UPI Transfer</h5>
+                    <span class="text-muted small">India / Zero Platform Fee</span>
+                  </div>
+                </div>
+                <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25">Direct UPI</span>
+              </div>
+
+              <p class="text-secondary-custom small mb-3">
+                Send direct donations with zero transaction fees using any UPI application (Google Pay, PhonePe, Paytm, BHIM, or banking apps).
+              </p>
+
+              <!-- UPI ID Box with One-Click Copy -->
+              <div class="upi-id-box mb-3">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-wallet2 text-success"></i>
+                  <span class="upi-id-text" id="upiIdValue">8903860041@apl</span>
+                </div>
+                <button type="button" class="btn-icon-action btn-copy-upi" data-upi="8903860041@apl" title="Copy UPI ID">
+                  <i class="bi bi-clipboard"></i>
+                </button>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <a href="upi://pay?pa=8903860041@apl&pn=Sathesh%20Phoenix&cu=INR" class="btn btn-upi flex-grow-1">
+                  <i class="bi bi-lightning-charge-fill"></i> Pay via UPI App
+                </a>
+                <button type="button" class="btn btn-phoenix-outline" data-bs-toggle="collapse" data-bs-target="#upiQrCollapse" aria-expanded="false" aria-controls="upiQrCollapse">
+                  <i class="bi bi-qr-code me-1"></i> Scan QR Code
+                </button>
+              </div>
+
+              <!-- Collapsible QR Code View -->
+              <div class="collapse" id="upiQrCollapse">
+                <div class="p-3 rounded bg-black bg-opacity-50 border border-secondary border-opacity-25 text-center mt-2">
+                  <div class="upi-qr-image-wrapper mb-2">
+                    <img src="assets/images/upi-qr.svg" alt="UPI QR Code - 8903860041@apl" class="img-fluid">
+                  </div>
+                  <div class="text-white small fw-bold font-monospace">8903860041@apl</div>
+                  <div class="text-muted small">Scan with Google Pay, PhonePe, Paytm, or BHIM</div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 mt-auto pt-2">
+                <span class="badge bg-dark border border-secondary text-secondary-custom">Google Pay</span>
+                <span class="badge bg-dark border border-secondary text-secondary-custom">PhonePe</span>
+                <span class="badge bg-dark border border-secondary text-secondary-custom">Paytm</span>
+                <span class="badge bg-dark border border-secondary text-secondary-custom">BHIM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 text-muted small">
+          <i class="bi bi-shield-check text-success me-1"></i> Contributions are verified directly &bull; Thank you for fueling the Phoenix software ecosystem!
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Software Details Modal -->
   <div class="modal fade" id="softwareDetailsModal" tabindex="-1" aria-labelledby="modalAppTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -715,13 +845,19 @@
           <p class="text-secondary-custom small pe-lg-4">
             Phoenix is an independent software development ecosystem dedicated to building high-velocity developer tools, bare-metal operating systems, and privacy-respecting utilities.
           </p>
-          <div class="d-flex gap-3 text-secondary-custom mt-3">
+          <div class="d-flex flex-wrap gap-2 text-secondary-custom mt-3">
             <span class="badge bg-dark border border-secondary text-secondary-custom">
               <i class="bi bi-github me-1"></i> Hosted on GitHub Pages
             </span>
             <span class="badge bg-dark border border-secondary text-secondary-custom">
               <i class="bi bi-shield-check me-1"></i> Free & Open
             </span>
+            <a href="https://github.com/sponsors/satheshsat" target="_blank" rel="noopener noreferrer" class="badge bg-danger bg-opacity-25 text-danger border border-danger border-opacity-50 text-decoration-none">
+              <i class="bi bi-heart-fill me-1"></i> Sponsor satheshsat
+            </a>
+            <a href="#donate" class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50 text-decoration-none">
+              <i class="bi bi-qr-code-scan me-1"></i> UPI: 8903860041@apl
+            </a>
           </div>
         </div>
 
@@ -745,6 +881,7 @@
             <li><a href="#features" class="footer-link">Architecture</a></li>
             <li><a href="#terminal" class="footer-link">Interactive Terminal</a></li>
             <li><a href="#faq" class="footer-link">Frequently Asked Questions</a></li>
+            <li><a href="#donate" class="footer-link text-phoenix"><i class="bi bi-heart-fill text-danger me-1"></i> Support / Donate (GitHub &amp; UPI)</a></li>
           </ul>
         </div>
       </div>
