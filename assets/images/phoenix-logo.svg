@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="phoenixGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3300" />
+      <stop offset="45%" stop-color="#ff6600" />
+      <stop offset="80%" stop-color="#ff9900" />
+      <stop offset="100%" stop-color="#ffcc00" />
+    </linearGradient>
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0055" />
+      <stop offset="50%" stop-color="#ff5500" />
+      <stop offset="100%" stop-color="#ffaa00" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <g filter="url(#glow)">
+    <!-- Phoenix Tail Feathers -->
+    <path d="M50 92 C46 80 40 70 32 64 C42 67 48 76 50 82 C52 76 58 67 68 64 C60 70 54 80 50 92 Z" fill="url(#phoenixGrad)" opacity="0.9"/>
+    <!-- Left Outer Wing -->
+    <path d="M48 55 C35 48 18 36 8 20 C14 34 26 48 40 56 C30 52 18 44 14 36 C19 46 30 58 45 61 Z" fill="url(#wingGrad)"/>
+    <!-- Left Inner Wing -->
+    <path d="M48 50 C38 42 26 30 20 15 C26 27 36 38 46 45 C38 38 30 28 27 21 C33 32 42 42 47 48 Z" fill="url(#phoenixGrad)"/>
+    <!-- Right Outer Wing -->
+    <path d="M52 55 C65 48 82 36 92 20 C86 34 74 48 60 56 C70 52 82 44 86 36 C81 46 70 58 55 61 Z" fill="url(#wingGrad)"/>
+    <!-- Right Inner Wing -->
+    <path d="M52 50 C62 42 74 30 80 15 C74 27 64 38 54 45 C62 38 70 28 73 21 C67 32 58 42 53 48 Z" fill="url(#phoenixGrad)"/>
+    <!-- Phoenix Body & Head -->
+    <path d="M50 16 C53 19 55 24 53 28 C51 31 53 35 54 40 C55 48 53 58 50 66 C47 58 45 48 46 40 C47 35 49 31 47 28 C45 24 47 19 50 16 Z" fill="url(#phoenixGrad)"/>
+    <!-- Phoenix Crest Flame -->
+    <path d="M50 8 C52 11 54 13 52 16 C50 13 49 11 50 8 Z" fill="#ffea00"/>
+    <path d="M47 12 C49 14 49 17 48 19 C47 17 46 15 47 12 Z" fill="#ff7700"/>
+    <path d="M53 12 C51 14 51 17 52 19 C53 17 54 15 53 12 Z" fill="#ff7700"/>
+    <!-- Center Core Glow -->
+    <circle cx="50" cy="42" r="3" fill="#ffffff" opacity="0.9"/>
+  </g>
+</svg>
+
