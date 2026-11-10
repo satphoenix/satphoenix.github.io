@@ -127,6 +127,26 @@ $(document).ready(function () {
         "Code generator for cURL, Python, Node.js, Go, Rust & Java"
       ],
       description: "Phoenix API Tester is the modern developer's ultimate API Swiss Army knife. Test endpoints with sub-millisecond precision, inspect payloads with formatted JSON/XML syntax highlighters, automate regression suites, and simulate backend endpoints locally with mock servers."
+    },
+    "phoenix-screen-share": {
+      id: "phoenix-screen-share",
+      name: "Phoenix Screen Share",
+      tagline: "Ultra-Low Latency 60FPS Peer-to-Peer Desktop & Screen Streaming",
+      category: "Media & Streaming",
+      badgeClass: "badge-media",
+      version: "v2.1.0",
+      lastUpdated: "Latest Release",
+      driveUrl: "https://drive.google.com/drive/folders/1rcIX9JvYXeWBYOvRNVwVkmLpJys2mT4V?usp=sharing",
+      iconClass: "bi-cast icon-screenshare",
+      size: "~48 MB",
+      architecture: "Cross-platform (Linux / Windows / macOS)",
+      highlights: [
+        "Real-time 60 FPS hardware-accelerated screen capture & encoding",
+        "Direct peer-to-peer WebRTC streaming with sub-30ms local latency",
+        "Multi-monitor selection, window clipping, and system audio loopback",
+        "End-to-end AES-256 encrypted peer pairing without relay servers"
+      ],
+      description: "Phoenix Screen Share delivers instantaneous, high-fidelity desktop broadcasting for developers, remote teams, and educators. Engineered with low-latency WebRTC and hardware encoders, it provides butter-smooth 60 FPS display streaming, crisp font rendering for IDEs, multi-display routing, and secure zero-relay peer-to-peer sharing."
     }
   };
 
@@ -331,6 +351,7 @@ $(document).ready(function () {
   4. <strong class="text-info">phoenix-recorder</strong> [Media / 4K Capture] - v4.1.0
   5. <strong class="text-info">phoenix-torrent</strong> [P2P / Client] - v2.3.0
   6. <strong class="text-info">phoenix-api-tester</strong> [API / Network] - v3.0.2
+  7. <strong class="text-info">phoenix-screen-share</strong> [Media / Streaming] - v2.1.0
   Type <span class="text-warning">download &lt;name&gt;</span> to retrieve links.`, "output");
         break;
 
